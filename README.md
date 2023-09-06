@@ -1,1 +1,1 @@
-This is README
+# school-store-manager
