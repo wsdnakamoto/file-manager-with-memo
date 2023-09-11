@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SchoolStoreManagerApplication {
+public class FileManagerWithMemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SchoolStoreManagerApplication.class, args);
+		SpringApplication.run(FileManagerWithMemoApplication.class, args);
 	}
 
 }
