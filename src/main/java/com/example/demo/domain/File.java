@@ -1,19 +1,18 @@
 package com.example.demo.domain;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.transaction.annotation.Transactional;
 
-import com.example.demo.repository.FileMapper;
-
-import lombok.RequiredArgsConstructor;
-
-@RequiredArgsConstructor
-@Transactional
 public class File {
 	
-	private final FileMapper mapper;
 	@Id
 	private int id;
 	private String name;
 	private String note;
+	
+//	File(final int id, final String name, final String note){
+//		if(name == null) throw new NullPointerException("ファイルを指定してください。");
+//		this.id = id;
+//		this.name = name;
+//		this.note = note;
+//	}
 }

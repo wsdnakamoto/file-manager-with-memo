@@ -19,10 +19,6 @@ spring:
 # AWS
 cloud:
   aws:
-    stack:
-      auto: false
-    region:
-      static: ap-northeast-1
     instance:
       data:
         enabled: false
