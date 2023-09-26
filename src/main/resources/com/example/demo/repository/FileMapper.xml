@@ -3,28 +3,22 @@
 <mapper namespace="com.example.demo.repository.FileMapper">
 
   <insert id="insert">
-    INSERT INTO file(name, note)
-    VALUES(#{name}, #{note})
+    INSERT INTO file(fileName, note)
+    VALUES(#{fileName}, #{note})
   </insert>
   
-  <select id="selectByPrimaryKey" resultType="File">
+  <select id="selectByFileName" resultType="File">
     SELECT * FROM file
-    WHERE id = #{id}
+    WHERE fileName = #{fileName}
   </select>
   
   <select id="selectAll" resultType="File">
     SELECT * FROM file
   </select>
   
-  <update id="update">
-    UPDATE file
-    SET name = #{name}, note = #{note}
-    WHERE id = #{id}
-  </update>
-  
-  <delete id="deleteByPrimaryKey">
+  <delete id="deleteByFileName">
     DELETE FROM file
-    WHERE id = #{id}
+    WHERE fileName = #{fielName}
   </delete>
 
 </mapper>

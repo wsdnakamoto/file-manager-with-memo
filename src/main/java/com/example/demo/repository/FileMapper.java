@@ -11,11 +11,9 @@ public interface FileMapper {
 	//CRUD操作のメソッド名だけを記述。
 	int insert(File record);
 	
-	File selectByPrimaryKey(int id);
+	File selectByFileName(String fileName);
 	
 	List<File> selectAll();
 	
-	int update(File record);
-	
-	int deleteByPrimaryKey(int id);
+	int deleteByFileName(String fileName);
 }
